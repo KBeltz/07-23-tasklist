@@ -4,6 +4,7 @@ class CreateTodoItems < ActiveRecord::Migration
       t.string :task
       t.string :assignee
       t.boolean :status
+      t.todo_list_id :integer
 
       t.timestamps null: false
     end
